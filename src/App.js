@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const requestAPI = async () => {
       if (request) {
-        const appID = '1fa066b7984fee20f2b4683342ade2b8';
+        const appID = 'token openweathermap';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appID}`;
         const req = await fetch(url);
         const res = await req.json();
